@@ -80,7 +80,7 @@ Um cluster se divide em:
 Define um Pod chamado `my-app-pod`, com o label `app: my-app`, rodando a imagem própria do Docker Hub na porta do container.
 
 ### service.yml
-Define um Service `NodePort` que usa o selector `app: my-app` para encontrar o Pod e o expõe na porta `30080` do Node.
+Define um Service `NodePort` que usa o selector `app: my-app` para encontrar o Pod e o expõe na porta `30007` do Node.
 
 ## Como executar no Minikube
 
