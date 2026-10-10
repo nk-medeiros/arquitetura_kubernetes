@@ -12,6 +12,7 @@ arquitetura_kubernetes/
 ├── README.md           # este arquivo
 ├── pod.yml             # implementação de um Pod
 ├── service.yml         # implementação de um Service (NodePort)
+├── app/                # Dockerfile e código da imagem
 └── evidencias/         # prints da execução no Minikube
 ```
 
@@ -59,7 +60,7 @@ Um cluster se divide em:
 |---|---|
 | **kubectl** | CLI para interagir com o cluster. Envia comandos ao API Server (`kubectl apply`, `get`, `describe`, `logs`, `delete`). |
 | **Minikube** | Cria um cluster Kubernetes local (um único Node) para estudo e desenvolvimento. |
-| **Docker Hub** | Registry público onde fica a imagem da aplicação (`usuario/my_app`). |
+| **Docker Hub** | Registry público onde fica a imagem da aplicação (`nkmedeiros/k8s_app:1.0`). |
 | **Manifesto YAML** | Arquivo declarativo que descreve o objeto desejado (`pod.yml`, `service.yml`). |
 
 ## Fluxo de funcionamento
@@ -126,5 +127,5 @@ Adicione os prints na pasta `evidencias/` e referencie aqui:
 
 | Integrante | Contribuição |
 |---|---|
-| Nayara Medeiros | Desenho no Drawio e pod.yml |
-| Lucas Henrique | README, service.yml e execução no Minikube |
+| Nayara Medeiros | Desenho no Drawio, README e pod.yml |
+| Lucas Henrique | service.yml e execução no Minikube |

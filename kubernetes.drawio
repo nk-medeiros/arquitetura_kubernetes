@@ -49,19 +49,19 @@
                 <mxCell id="pod1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pod 1&lt;br&gt;label: app=my-app&lt;/font&gt;" vertex="1">
                     <mxGeometry height="120" width="220" x="530" y="600" as="geometry"/>
                 </mxCell>
-                <mxCell id="c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;container&lt;br&gt;my_app :8080&lt;/font&gt;" vertex="1">
+                <mxCell id="c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;container&lt;br&gt;k8s_app :8000&lt;/font&gt;" vertex="1">
                     <mxGeometry height="55" width="160" x="550" y="645" as="geometry"/>
                 </mxCell>
                 <mxCell id="pod2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=12;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pod 2 (réplica)&lt;br&gt;label: app=my-app&lt;/font&gt;" vertex="1">
                     <mxGeometry height="120" width="220" x="810" y="600" as="geometry"/>
                 </mxCell>
-                <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;container&lt;br&gt;my_app :8080&lt;/font&gt;" vertex="1">
+                <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;container&lt;br&gt;k8s_app :8000&lt;/font&gt;" vertex="1">
                     <mxGeometry height="55" width="160" x="840" y="645" as="geometry"/>
                 </mxCell>
-                <mxCell id="svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Service (NodePort)&lt;br&gt;selector: app=my-app | nodePort 30080 → targetPort 8080&lt;/font&gt;" vertex="1">
+                <mxCell id="svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Service (NodePort)&lt;br&gt;selector: app=my-app | nodePort 30080 → targetPort 8000&lt;/font&gt;" vertex="1">
                     <mxGeometry height="70" width="500" x="530" y="780" as="geometry"/>
                 </mxCell>
-                <mxCell id="hub" parent="1" style="shape=cloud;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Docker Hub&lt;br&gt;usuario/my_app&lt;/font&gt;" vertex="1">
+                <mxCell id="hub" parent="1" style="shape=cloud;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Docker Hub&lt;br&gt;nkmedeiros/&lt;br&gt;k8s_app:1.0&lt;/font&gt;" vertex="1">
                     <mxGeometry height="120" width="150" x="-40" y="600" as="geometry"/>
                 </mxCell>
                 <mxCell id="browser" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Navegador&lt;br&gt;http://IP-do-minikube:30080&lt;/font&gt;" vertex="1">
